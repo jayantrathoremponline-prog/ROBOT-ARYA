@@ -1,0 +1,1 @@
+TO develop a system which will automatically monitor the industrial application, and generate alerts alarm or take intelligent decision using concept of IOT, and also designed the system to tack intelligent decision and control devices.

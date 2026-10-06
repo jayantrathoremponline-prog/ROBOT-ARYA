@@ -1,0 +1,2 @@
+This project is a automatic bottle filling machine. Bottles placed on the servomotor will be filled with a predetermined amount of liquid automatically. The flow of the project will be something like this liquid from bottle-A bottle -B and bottle-c. The servo motor fixing the position and IR Sensor starts sensing the empty bottle and the servo motor start rotating then the bottle placed as it will be detected by a bottle detector section. This will stop the servo motor and the bottle will be filled to predetermined level.
+

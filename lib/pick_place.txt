@@ -1,0 +1,1 @@
+With teh help of this pick and place project, we can pick things and place them according to our requirements. There are some major electronic devices which makes this idea very impressive. With Arduino device, we can operate and control teh motor driver which are connected to device, with the help of Bluetooth, we can access the feature.

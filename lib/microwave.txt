@@ -1,0 +1,1 @@
+The typical microwave test bench are precision microwave systems. It consist of rectangular microwave waveguide components. The are used for test and measurement of various microwave modules in the lab.

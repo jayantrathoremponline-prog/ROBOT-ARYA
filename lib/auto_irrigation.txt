@@ -1,0 +1,1 @@
+In this project an automation of farm irrigation and soil moisture control by Arduino using soil moisture sensor and relay module. This automatic irrigation system senses the moisture content of the soil and automatically switches the pump when the power is on.

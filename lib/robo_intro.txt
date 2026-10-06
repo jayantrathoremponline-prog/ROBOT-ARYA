@@ -1,0 +1,1 @@
+Hi. My name is Aryaa V-1. I can inform you about the components and devices of your Electronics and communication department lab. To simply get started, just say Aryaa and after the trigger sound, ask me "What is ..." completed with the device's or component's name. If you want me to introduce the lab, just say Aryaa and after the trigger sound say "Introduce the lab".

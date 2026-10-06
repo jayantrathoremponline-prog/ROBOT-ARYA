@@ -1,0 +1,1 @@
+Smart attendance management system, is designed to effeciently record platform and monitor the attendance of students in educational institutions. it automates the process of tracking student attendance, making it easier for teachers, adminstrators, and parents to access real time attendance information.

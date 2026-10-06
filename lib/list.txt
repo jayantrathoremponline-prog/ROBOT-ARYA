@@ -1,0 +1,103 @@
+1)AUTOMATIC IRRIGATION 
+
+ In this project an automation of farm irrigation and soil moisture control by Arduino using soil moisture sensor and relay module. 
+This automatic irrigation system senses the moisture content of the soil and automatically switches the pump when the power is on.
+
+
+
+2) automztic water filling machine using aurdino
+
+This priject is a automatic bottle filling machine. Bottles placed on the servomotor will be filled with a predetermined amount of liquid automatically.
+The flow of the project will be somthing like this liquid from bottle-A bottle -B and bottle-c .
+ The servo motor fixing the position and IR Sensor starts sensing the empty bottle and the servo motor start rotating then the bottle placed as it will be detected 
+by a bottle detector section. This will stop the servo motor and the bottle will be filled to predetermined level.
+
+
+3)  Automatic Waste Segregator and Monitoring System
+
+Automatic Waste Segregator and Monitoring System is an automated dustbin which can be used by all level of society. 
+This paper proposes an Automatic Waste Segregator and Monitoring System which is designed to sort the wet waste, dry waste and metal material into each bin respectively.
+ The main objective of this project is to automatically segregate the waste based on its material and monitor daily waste disposal rates and apply proper maintenance of the dustbin.
+ Besides that, this project is to promote 3R (reuse, recycle, reduced) concept among citizens. This project uses three different types of sensors to separate three types of waste.
+ Moisture sensor is used to detect wet waste, inductive proximity sensor is used to detect metal waste and infrared radiation or IR sensor is used to detect dry waste.
+ This project has been made with the help of Arduino UNO with ATmega328p microcontroller and the whole programming is done in embedded c language.
+ It also has a LCD display which displays the type of waste being detected.
+ It uses servo motor to rotate the bins a bring a particular type of dustbin below the funnel.
+ This servo motor is connected to the Arduino UNO and works according to the instruction given by Arduino.
+
+4)  Solar Wind Hybrid Energy systems
+
+Solar Wind Hybrid Energy systems (SWHES). The future of Energy generation depends on Solar Energy, as it the most abundant natural source of energy. 
+Conventional power generation is going to become a difficult task in the future; it is due to the non-availability of coal. The increased per unit generation cost in the thermal power plant. 
+The transmission power loss is also one reason. Pollutants released from the conventional power generation will affect the environment. 
+To overcome these difficulties in future we have to depend on solar power generation. 
+It is clean source of energy and it can transform to any source of energy with no effect on the environment.
+
+To get continuous power supply we should operate wind and solar power plants together as a single unit.
+ By this combined mode of operation, the overall efficiency of the system increases. 
+The combined power generation will give the continuity power supply for household applications with battery as a storage element.
+
+5)  smart shopping trolley
+
+This is an smart shopping trolley 
+Normally,as we go to any supermarket or mall then we see a lot of rush and a long queue at the bill counters.
+ So this is one of the projects in which customer can directly see the product details and costs in which with the help of RFID cards and tags we can scan the product and get the information. 
+In this project an RFID tag is placed at each of the product of the supermarket which has unique IDs. 
+If we scan the product on the RFID module it will pas the information to the LCD screen attached to the trolley.
+
+Conclusion is we don't have to wait in a long queue if this project can be advanced then some features like paying
+ bill directly can also limit the queue issues,if customer has scanned the product and don't want to buy it then with the help of a switch he/she can erase that product's details
+
+
+6)
+
+Home automation is a famous and most used technology in the world. The object of this paper is to develop a home automation system based on environmental monitoring system,
+ which can be monitored from all over the world. Besides the system will have an individual sun tracking solar panel based power supply technology. 
+The system employs an embedded web server based on Arduino Mega 2560 micro controller, with internet protocol connectivity for accessing and controlling electronic appliances remotely.
+ Additionally, the proposed system does not require a dedicated server PC like other available systems and offers a specific communication protocol 
+to monitor and control the home environment with more than just the switching functionality.
+ To demonstrate the feasibility and effectiveness of this system, devices such as light switches, power plug, temperature sensor, gas sensor,
+ water flow sensor, water level sensor and motion sensors, smart touch-pad control door security have been integrated with the proposed smart home control system.
+
+7) Pick and Place
+
+Pick and Place, with the help of this idea we can pick the things and place them according to our requirements.
+there are some major electronic devices which makes this idea very impressive. With Arduino device we can operate
+and control the motor drivers which are connected to the devices, with the help of Bluetooth we can access the feautres.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
