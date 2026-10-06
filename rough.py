@@ -1,39 +1,86 @@
-import os
-from time import *
-from multiprocessing import *
+# # import multiprocessing
+# # import time
+
+# # def slow_worker():
+# #     print('Starting worker')
+# #     time.sleep(1)
+# #     print('Finished worker')
+
+# # if __name__ == '__main__':
+# #     p = multiprocessing.Process(target=slow_worker)
+# #     print('BEFORE:', p, p.is_alive())
+
+# #     p.start()
+# #     print('DURING:', p, p.is_alive())
+
+# #     p.terminate()
+# #     print('TERMINATED:', p, p.is_alive())
+
+# import pygame
+# import multiprocessing
+# import time
+
+# def play_wav_file(device):
+#     pygame.init()
+
+#     sound = pygame.mixer.Sound(device)
+#     sound.play()
+
+#     while pygame.mixer.get_busy():
+#         pass
+
+# def run_process(device):
+#     try:
+#         if process.is_alive():
+#             process.terminate()
+#     except:
+#         pass
+
+#     process = multiprocessing.Process(target=play_wav_file, args = (device,))
+#     process.start()
+
+# if __name__ == '__main__':
+#     run_process("/home/humanoid/Main/voices/breadboard.wav")
+#     time.sleep(5)
+#     run_process("/home/humanoid/Main/voices/breadboard.wav")
+
 import pygame
+from multiprocessing import *
+from time import *
 
-global var 
-var = 1
-process = None
+stop_event = Event()
 
-def play_sound(sound_path):
-    pygame.mixer.init()
-    pygame.mixer.music.load(sound_path)
-    pygame.mixer.music.play()
-    
-    while pygame.mixer.music.get_busy():
-        continue
+def play_wav_file(device, stop_event):
+    pygame.init()
+    sound = pygame.mixer.Sound(device)
+    sound.play()
+    while pygame.mixer.get_busy() and not stop_event.is_set():
+        pass
 
-def play_process(sound_path):
-    global var
+def run_process(device, stop_event):
     global process
 
-    if process is not None:
-        os.kill(process.pid, 9)
+    try:
+        if process.is_alive():
+            stop_event.set()
+    except:
+        pass
 
-    process = Process(target=play_sound, args=(sound_path,))
+    try:
+        if stop_event.is_set():
+            process.terminate()
+    except:
+        pass
+    
+    process = Process(target=play_wav_file, args=(device, stop_event))
     process.start()
-    process_pid = process.pid
-    print(f"\nProcess {var} PID: {process_pid}\n")
-    var += 1
+    stop_event.clear()
 
 if __name__ == '__main__':
-    sound_path1 = '/home/humanoid/Main/voices/breadboard.wav'
-    sound_path2 = '/home/humanoid/Main/voices/cro.wav'
-
-    play_process(sound_path1)
-
-    sleep(5)  # delay in seconds before playing the second file
-
-    play_process(sound_path2)
+    run_process("/home/humanoid/Main/voices/breadboard.wav", stop_event)
+    sleep(5)
+    run_process("/home/humanoid/Main/voices/breadboard.wav", stop_event)
+    sleep(5)
+    run_process("/home/humanoid/Main/voices/cro.wav", stop_event)
+    sleep(5)
+    stop_event.set()
